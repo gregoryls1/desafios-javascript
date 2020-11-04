@@ -9,6 +9,10 @@
  *
  */
 
-const sumArguments = arr => {}
+const sumArguments = (...arr) => {
+    let value = arr.reduce((total, number)=> total + number)
+    
+    return value
+}
 
 module.exports = sumArguments

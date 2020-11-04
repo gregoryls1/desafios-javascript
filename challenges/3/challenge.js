@@ -17,6 +17,8 @@
  * a > b sempre.
  */
 
-const MDC = (a, b) => {}
+const MDC = (a, b) => {
+    return !b ? a : MDC(b, a % b)
+}
 
 module.exports = MDC
